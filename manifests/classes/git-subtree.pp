@@ -7,8 +7,7 @@ Installs git-subtree and adds a symlink to /usr/local/bin
 */
 class git-subtree {
 
-  # FIXME: this regex will only work until git 1.9
-  if $gitversion !~ /^(?:1:)1.[789]./ {
+  if (versioncmp("1.6.999", $git_version) > 0) {
     fail "git-subtree requires git 1.7 or later!"
   }
 
