@@ -16,7 +16,7 @@ class git-subtree {
     ensure   => present,
     source   => "git://github.com/apenwarr/git-subtree.git",
     provider => 'git',
-    revision => '7f74d65b12',
+    revision => '2793ee6ba',
   }
 
   file { "/usr/local/bin/git-subtree":
