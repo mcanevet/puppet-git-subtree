@@ -13,7 +13,7 @@ class git-subtree {
 
   vcsrepo { "/usr/src/git-subtree":
     ensure   => present,
-    source   => "git://github.com/apenwarr/git-subtree.git",
+    source   => "http://github.com/apenwarr/git-subtree.git",
     provider => 'git',
     revision => '2793ee6ba',
   }
